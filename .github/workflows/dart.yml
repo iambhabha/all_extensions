@@ -18,6 +18,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    with:
+      # Specify the github actions deployment environment
+      environment: pub.dev
 
     steps:
       - uses: actions/checkout@v3
